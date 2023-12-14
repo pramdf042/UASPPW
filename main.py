@@ -8,7 +8,7 @@ text = st.text_area("Masukkan Artikel Berita")
 
 button = st.button("Submit")
 
-if "nb_reduksi" not in st.session_state:
+if "svm_lda" not in st.session_state:
     # st.session_state.nb_reduksi = []
     # st.session_state.nb_asli = []
     st.session_state.svm_lda = []
@@ -59,7 +59,7 @@ if selected == "Dataset Information":
 
 
 elif selected == "Klasifikasi":
-  if st.session_state.nb_reduksi:
+  if st.session_state.svm_lda:
       svm_lda, svm_NonLDA = st.tabs(["SVM(LDA)", "SVM(Tanpa LDA)"])
       
       # with nb_lda:
