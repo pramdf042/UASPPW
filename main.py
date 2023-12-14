@@ -60,7 +60,7 @@ if selected == "Dataset Information":
 
 elif selected == "Klasifikasi":
   if st.session_state.nb_reduksi:
-      nb_lda, nb_NonLDA, svm_lda, svm_NonLDA = st.tabs(["Model Naive Bayes(LDA)", "Model Naive Bayes (Tanpa LDA), SVM(LDA)", "SVM(Tanpa LDA)"])
+      nb_lda, nb_NonLDA, svm_lda, svm_NonLDA = st.tabs(["Model Naive Bayes(LDA)", "Model Naive Bayes (Tanpa LDA)", "SVM(LDA)", "SVM(Tanpa LDA)"])
       
       with nb_lda:
         st.write(f"Prediction Category : {st.session_state.nb_reduksi}")
